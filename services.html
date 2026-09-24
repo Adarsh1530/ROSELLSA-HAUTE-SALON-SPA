@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In-Salon Services Menu | Rosellsa Haute Beauty Sanctuary</title>
+  <meta name="description" content="Explore Rosellsa's 52 signature salon beauty treatments in Muscat. Clinical facials, Moroccan hammam steam rituals, bespoke hair coloring, Russian manicures, and bridal glam.">
+  <link rel="icon" type="image/png" href="assets/1e7387f1-e937-47f8-8d48-7516ffbfa3cc.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-logotype">
+        <a href="index.html" class="brand-link">
+          <img src="assets/rosellsa_logo.png" alt="Rosellsa Crest Logo" class="brand-crest">
+          <h1 class="brand-name">ROSELLSA</h1>
+          <span class="brand-subline">HAUTE BEAUTY SANCTUARY &bull; MUSCAT</span>
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li class="nav-bullet">&middot;</li>
+          <li><a href="about.html" class="nav-item">About</a></li>
+          <li class="nav-bullet">&middot;</li>
+          <li><a href="services.html" class="nav-item active">Services</a></li>
+          <li class="nav-bullet">&middot;</li>
+          <li><a href="home-services.html" class="nav-item">Home Services</a></li>
+          <li class="nav-bullet">&middot;</li>
+          <li><a href="products.html" class="nav-item">Products</a></li>
+          <li class="nav-bullet">&middot;</li>
+          <li><a href="feedback.html" class="nav-item">Customer Feedback</a></li>
+          <li class="nav-bullet">&middot;</li>
+          <li><a href="consultation.html" class="nav-item">Consultation</a></li>
+          <li class="nav-bullet">&middot;</li>
+          <li><a href="book-now.html" class="nav-item nav-book-btn">Book Now</a></li>
+          <li class="nav-bullet">&middot;</li>
+          <li><a href="contact.html" class="nav-item">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" onclick="closeMobileNav()">Home</a></li>
+        <li><a href="about.html" onclick="closeMobileNav()">About</a></li>
+        <li><a href="services.html" class="active" onclick="closeMobileNav()">Services</a></li>
+        <li><a href="home-services.html" onclick="closeMobileNav()">Home Services</a></li>
+        <li><a href="products.html" onclick="closeMobileNav()">Products</a></li>
+        <li><a href="feedback.html" onclick="closeMobileNav()">Customer Feedback</a></li>
+        <li><a href="consultation.html" onclick="closeMobileNav()">Consultation</a></li>
+        <li><a href="book-now.html" onclick="closeMobileNav()">Book Now</a></li>
+        <li><a href="contact.html" onclick="closeMobileNav()">Contacts</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Subpage Banner -->
+    <section class="subpage-banner">
+      <div class="subpage-banner-inner">
+        <span class="subpage-badge">THE EDITORIAL PRICE MENU</span>
+        <h1 class="subpage-title">In-Salon Services</h1>
+        <p class="subpage-subtitle">52 Master Beauty Treatments &bull; Pure Botanical Luxury &bull; Transparent Official Pricing</p>
+      </div>
+    </section>
+
+    <!-- Visual Showcase: Clinical Spa & Treatment Suites -->
+    <section class="subpage-visual-showcase">
+      <div class="subpage-visual-frame">
+        <img src="assets/generated/lookbook_spa_room.jpg" alt="Clinical Skincare and Private Facial Suite">
+      </div>
+      <div style="text-align: center; margin-top: 16px;">
+        <p style="font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-muted);">
+          THALGO MARINE PROTOCOLS &bull; VORTEX HYDRA FACIAL &bull; MEDICAL GRADE HYGIENE
+        </p>
+      </div>
+    </section>
+
+    <!-- In-Salon Services Main Catalog -->
+    <section class="services-section" style="padding-top: 20px;">
+      <!-- Category Filter Tabs -->
+      <div class="services-filter-nav">
+        <button type="button" class="filter-tab active" data-cat="all">ALL (<span id="count-all">52</span>)</button>
+        <span class="filter-dot">&middot;</span>
+        <button type="button" class="filter-tab" data-cat="facials">6 FACIALS (<span id="count-facials">6</span>)</button>
+        <span class="filter-dot">&middot;</span>
+        <button type="button" class="filter-tab" data-cat="hammam">MOROCCAN HAMMAM (<span id="count-hammam">9</span>)</button>
+        <span class="filter-dot">&middot;</span>
+        <button type="button" class="filter-tab" data-cat="hair">HAIR DESIGN (<span id="count-hair">12</span>)</button>
+        <span class="filter-dot">&middot;</span>
+        <button type="button" class="filter-tab" data-cat="nails">HANDS &amp; FEET (<span id="count-nails">12</span>)</button>
+        <span class="filter-dot">&middot;</span>
+        <button type="button" class="filter-tab" data-cat="waxing">WAXING &amp; SUGARING (<span id="count-waxing">8</span>)</button>
+        <span class="filter-dot">&middot;</span>
+        <button type="button" class="filter-tab" data-cat="makeup">MAKEUP &amp; LASHES (<span id="count-makeup">5</span>)</button>
+      </div>
+
+      <!-- Real-Time Search Bar -->
+      <div class="services-search-wrapper">
+        <div class="search-input-box">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="serviceSearchInput" class="service-search-input" placeholder="Search treatment by name (e.g. Hydra, Hammam, Balayage, Russian Manicure)...">
+        </div>
+      </div>
+
+      <!-- Two-Column Editorial Price Menu -->
+      <div class="services-grid" id="servicesGrid">
+        <!-- Rendered by main.js -->
+      </div>
+    </section>
+
+    <!-- Bottom Booking CTA Banner -->
+    <section style="background-color: var(--bg-subtle); padding: 70px 24px; text-align: center; border-top: 1px solid var(--border-light); margin-top: 60px;">
+      <h2 style="font-family: var(--font-serif); font-size: 38px; font-weight: 300; margin-bottom: 16px;">Reserve Your Treatment</h2>
+      <p style="font-size: 13px; letter-spacing: 0.14em; color: var(--text-secondary); max-width: 580px; margin: 0 auto 30px; line-height: 1.8;">
+        Select your preferred treatment, date, and time. Our concierge desk will confirm your appointment immediately.
+      </p>
+      <div class="concierge-btn-group">
+        <a href="book-now.html" class="btn-westfolk-dark">Open Booking Engine</a>
+        <button type="button" class="btn-westfolk-outline" onclick="openBookingDrawer()">Slide-Over Drawer</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Slide-Over VIP Booking Drawer -->
+  <div class="booking-drawer-overlay" id="drawerOverlay" onclick="closeBookingDrawer()"></div>
+  <aside class="booking-drawer" id="bookingDrawer" aria-label="Appointment Drawer">
+    <div class="drawer-header">
+      <div>
+        <span class="drawer-eyebrow">ROSELLSA SANCTUARY</span>
+        <h3 class="drawer-title">Reserve Appointment</h3>
+      </div>
+      <button type="button" class="drawer-close-btn" onclick="closeBookingDrawer()" aria-label="Close Drawer">&times;</button>
+    </div>
+
+    <form class="drawer-body" onsubmit="handleDrawerBookingSubmit(event)">
+      <div class="form-group customer-type-box">
+        <label class="form-label">APPOINTMENT TYPE *</label>
+        <div class="customer-type-options">
+          <label class="type-radio-label">
+            <input type="radio" name="drawerClientType" value="New Customer" checked>
+            <span class="type-btn">First-Time Guest</span>
+          </label>
+          <label class="type-radio-label">
+            <input type="radio" name="drawerClientType" value="Rebooking Customer">
+            <span class="type-btn">Returning Client</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="drawerServiceSelect" class="form-label">SELECT TREATMENT *</label>
+        <select id="drawerServiceSelect" class="form-control" required onchange="handleDrawerServiceChange()"></select>
+        <span class="service-price-indicator" id="drawerPriceDisplay">Price: 10 OMR</span>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">LOCATION *</label>
+        <div class="location-radio-group">
+          <label class="radio-label">
+            <input type="radio" name="drawerLocation" value="salon" id="locSalon" checked onchange="updateDrawerLocationRules()">
+            <span>In-Salon Sanctuary</span>
+          </label>
+          <label class="radio-label" id="homeServiceLabel">
+            <input type="radio" name="drawerLocation" value="home" id="locHome" onchange="updateDrawerLocationRules()">
+            <span>Home Service (Muscat)</span>
+          </label>
+        </div>
+        <p class="location-warning-text" id="audioRuleNotice" style="display: none;"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="clientNameInput" class="form-label">FULL NAME *</label>
+        <input type="text" id="clientNameInput" class="form-control" placeholder="e.g. Fatima Al-Harthy" required>
+      </div>
+
+      <div class="form-group">
+        <label for="clientPhoneInput" class="form-label">WHATSAPP / PHONE NUMBER *</label>
+        <input type="tel" id="clientPhoneInput" class="form-control" placeholder="+968 9XXXXXXX" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-half">
+          <label for="bookingDateInput" class="form-label">PREFERRED DATE *</label>
+          <input type="date" id="bookingDateInput" class="form-control" required>
+        </div>
+        <div class="form-group col-half">
+          <label for="bookingTimeSelect" class="form-label">PREFERRED TIME *</label>
+          <select id="bookingTimeSelect" class="form-control" required>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="02:00 PM">02:00 PM</option>
+            <option value="04:00 PM">04:00 PM</option>
+            <option value="06:00 PM">06:00 PM</option>
+            <option value="08:00 PM">08:00 PM</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group" id="homeAddressGroup" style="display: none;">
+        <label for="clientAddressInput" class="form-label">MUSCAT HOME / HOTEL ADDRESS *</label>
+        <input type="text" id="clientAddressInput" class="form-control" placeholder="e.g. Villa 14, Way 203, Al Mouj">
+      </div>
+
+      <div class="form-group">
+        <label for="clientNotesInput" class="form-label">SPECIAL REQUESTS</label>
+        <textarea id="clientNotesInput" class="form-control" rows="2" placeholder="Specific therapist, allergies, or questions"></textarea>
+      </div>
+
+      <div class="drawer-footer">
+        <button type="submit" class="btn-westfolk-dark" style="width: 100%; padding: 16px;">
+          PROCEED VIA WHATSAPP
+        </button>
+      </div>
+    </form>
+  </aside>
+
+  <!-- Floating WhatsApp Concierge -->
+  <a href="https://wa.me/96898564463?text=Hello%20Rosellsa%20Sanctuary%2C%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Chat on WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 2.082.85 3.256.85 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.745 0-3.388-.456-4.819-1.253L2 22l1.547-5.011C2.695 15.545 2.22 13.829 2.22 11.938 2.22 6.453 6.704 1.969 12.189 1.969 17.674 1.969 22.158 6.453 22.158 11.938z"/>
+    </svg>
+    <span>WhatsApp Concierge</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; 2026 by ROSELLSA. Muscat, Sultanate of Oman. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a><span>&bull;</span>
+        <a href="about.html">About</a><span>&bull;</span>
+        <a href="services.html">Services</a><span>&bull;</span>
+        <a href="home-services.html">Home Services</a><span>&bull;</span>
+        <a href="products.html">Products</a><span>&bull;</span>
+        <a href="feedback.html">Feedback</a><span>&bull;</span>
+        <a href="consultation.html">Consultation</a><span>&bull;</span>
+        <a href="book-now.html">Book Now</a><span>&bull;</span>
+        <a href="contact.html">Contacts</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
